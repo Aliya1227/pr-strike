@@ -1,0 +1,30 @@
+# CSS Z-index
+
+CSS z-index berfungsi untuk mengspesifikasi urutan elemen
+
+aturan penggunaan z-index:
+-CSS z-index hanya berfungsi untuk elemen position (position: absolute, position: relative, position: fixed, position: sticky) atau flex item 
+ (elemen yang merupakan "children" langsung dari (display: flex;) elemen
+-Jika tidak menggunakan z-index maka elemen yang paling terakhir di HTML (terakhir ditulis) yang akan berada paling atas
+-tambah besar nilai(angka) z-index nya maka urutan elemen akan semakin didepan
+
+###Langsung penggunaan kode
+
+'''css
+div{
+  /*Penjelasan*/
+  /*nilainya sma dengan nilai parentnya*/ 
+  z-index: auto;
+}
+
+div{
+  /*memberi angka, bisa menggunakan angka negatif*/ 
+  z-index: 20;
+}
+
+div{
+  /*z-index dengan nilai default elemen*/ 
+  z-index: initial;
+}
+
+###Referensi (https://www.w3schools.com/cssref/pr_pos_z-index.asp)
